@@ -81,8 +81,8 @@ void instruct_pop(stack_t **stack, unsigned int line)
         *stack = (*stack)->next;
     else
         *stack = NULL;
-        free(pop);
-        var.len_stack--;
+    free(pop);
+    var.len_stack--;
 }
 
 /**
